@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Random Generator</title>
+</head>
+<body>
+<div class="container">
+    <div>
+    <table class="table table-striped">
+<tr>
+<th>Number</th>
+<th>Prime</th>
+</tr>
+            <tr th:each="queuedata : ${QueueData}">
+                <td th:text="${queuedata.iData}">Number</td>
+                <td th:text="${queuedata.bResult}">Prime</td>
+            </tr>
+ </table>
+    
+        <a href="/home">click here to go to home page</a>
+    </div>
+</div>
+</body>
+</html>
